@@ -28,10 +28,14 @@
 <body>
   <a-scene>
     <a-assets>
-      <a-asset-item id="tunnel-obj" src="assets/images/elviento.obj"></a-asset-item>
+      <a-asset-item id="tunnel" src="assets/images/tunnel.glb"></a-asset-item>
+      <a-asset-item id="wire" src="assets/images/wire.glb"></a-asset-item>
     </a-assets>
-    <a-sky color="black"></a-sky>
-    <a-obj-model src="assets/images/elviento.obj" material="" position="1 1 1" scale="0.1 0.1 0.1"></a-obj-model>
+    <a-entity camera look-controls wasd-controls></a-entity>
+    <a-sky color="white"></a-sky>
+
+    <a-entity gltf-model="#tunnel" material="transparent: true; opacity: 0.5" shadow="cast: true" shadow="receive: true" ></a-entity>
+    <a-entity gltf-model="#wire" material="metalness: 1" position="100 -100 100" rotation="50 50 0" shadow="cast: true" shadow="receive: true"></a-entity>
 
   </a-scene>
 </body>
