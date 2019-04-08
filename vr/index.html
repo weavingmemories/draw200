@@ -28,14 +28,14 @@
 <body>
   <a-scene>
     <a-assets>
-      <a-asset-item id="tunnel" src="assets/images/tunnel.glb"></a-asset-item>
-      <a-asset-item id="wire" src="assets/images/wire.glb"></a-asset-item>
+      <a-asset-item id="tunnel" src="assets/images/tunnel.obj"></a-asset-item>
+      <a-asset-item id="wire" src="assets/images/wire1.obj"></a-asset-item>
     </a-assets>
     <a-entity camera look-controls wasd-controls></a-entity>
     <a-sky color="white"></a-sky>
 
-    <a-entity gltf-model="#tunnel" material="transparent: true; opacity: 0.5" shadow="cast: true" shadow="receive: true" ></a-entity>
-    <a-entity gltf-model="#wire" material="metalness: 1" position="100 -100 100" rotation="50 50 0" shadow="cast: true" shadow="receive: true"></a-entity>
+    <a-entity obj-model="obj: #tunnel" material="transparent: true; opacity: 0.9" shadow="cast: true" shadow="receive: true" ></a-entity>
+    <a-entity obj-model="obj: #wire" material="metalness: 1" position="0 -100 0" rotation="0 50 50" shadow="cast: true" shadow="receive: true"></a-entity>
 
   </a-scene>
 </body>
