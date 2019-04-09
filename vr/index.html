@@ -31,14 +31,15 @@
     <a-assets timeout="10000">
       <a-asset-item id="tunnel" src="assets/images/sculpt.obj"></a-asset-item>
       <a-asset-item id="wire" src="assets/images/wire1.obj"></a-asset-item>
-      <a-asset-item id="wiretwo" src="assets/images/wire1.obj"></a-asset-item>
+      <a-asset-item id="furniture" src="assets/images/furniture.obj"></a-asset-item>
     </a-assets>
-    <a-entity environment="preset: dream; skyType:gradient; skyColor: #0a060f; horizonColor: #1c0935; shadow:true; shadowSize:5; lighting:none; groundTexture:none; dressing:none; groundColor: #445; grid: cross"></a-entity>
+    <a-entity environment="preset: dream; skyType:gradient; skyColor: #0a060f; horizonColor: #1c0935; shadow:true; shadowSize:3; lighting:none; groundTexture:none; dressing:none; groundColor: #445; grid: cross"></a-entity>
 
     <a-entity light="type:point; castShadow:true; color:#11ff94" position="1 1 1"></a-entity>
 
 
     <a-entity obj-model="obj: #tunnel" material="transparent: true; opacity: 0.3;" rotation="0 0 190" position="0 3 0" shadow="cast: true" shadow="receive: true" ></a-entity>
+    <a-entity obj-model="obj: #furniture" material="transparent:true; opacity: 0.8; emissive:#b375ea" scale="0.015 0.015 0.015" position="1.25 0 1.5" rotation="0 50 0" shadow="cast:true" shadow="receive:true" ></a-entity>
     <a-entity obj-model="obj: #wire" material="metalness: 1" position="0 10 0" rotation="0 300 180" scale="0.1 0.1 0.1" shadow="cast: true" shadow="receive: true" animation="property: rotation; from: 0 0 0; to: 360 360 360; loop: true; dur: 20000">
     </a-entity>
 
