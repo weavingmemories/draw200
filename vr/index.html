@@ -33,13 +33,13 @@
       <a-asset-item id="wire" src="assets/images/wire1.obj"></a-asset-item>
       <a-asset-item id="wiretwo" src="assets/images/wire1.obj"></a-asset-item>
     </a-assets>
-    <a-sky color="purple"></a-sky>
+    <a-sky color="black"></a-sky>
 
-    <a-entity light="type:directional; castShadow:true; color:blue;" position="1 1 1"></a-entity>
-    <a-plane height="100" width="100" rotation="-90 0 0" shadow="receive:true"></a-plane>
+    <a-entity light="type:point; castShadow:true; color:#479cff" position="1 1 1"></a-entity>
+    <a-plane color="#999999" height="100" width="100" rotation="-90 0 0" shadow="receive:true"></a-plane>
 
-    <a-entity obj-model="obj: #tunnel" material="transparent: true; opacity: 0.7;" position="0 3 0" shadow="cast: true" shadow="receive: true" ></a-entity>
-    <a-entity obj-model="obj: #wire" material="metalness: 1" position="0 10 0" rotation="0 300 180" scale="0.1 0.1 0.1" shadow="cast: true" shadow="receive: true" animation="property: rotation; to: 0 360 0; loop: true; dur: 10000">
+    <a-entity obj-model="obj: #tunnel" material="transparent: true; opacity: 0.1;" rotation="0 0 190" position="0 3 0" shadow="cast: true" shadow="receive: true" ></a-entity>
+    <a-entity obj-model="obj: #wire" material="metalness: 1" position="0 10 0" rotation="0 300 180" scale="0.1 0.1 0.1" shadow="cast: true" shadow="receive: true" animation="property: rotation; to: 360 360 360; loop: true; dur: 20000">
     </a-entity>
 
 
